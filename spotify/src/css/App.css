@@ -1,11 +1,17 @@
-.Home {
+.App {
   text-align: center;
-  background-color: white;
+}
+p{
+  margin-top:-1%;
+  font-weight: bold;
 }
 a{ 
   color:white;
   text-transform: uppercase;
   text-decoration: none;
+}
+a:hover{
+  background-color:#3e8e41;
 }
 h2{ 
   margin-top:15%;
@@ -13,46 +19,69 @@ h2{
   text-align: center;
   font-size: 50px;
 }
-.text-p{
-  margin-top: 5%;
-  font-size: 15px;
-  color:#EFEFEF;
-}
-.Home-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  font-size:35px;
 }
 .Home-initial {
-  position: fixed;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
   background-color:#f6cb6c; 
-  margin-top: -1.5%;
-  width: 100%;
-  height: 70%;
+  /* margin-top: -2%; */
+  height: 70vh;
 }
 .Home-menuBar{
-  width: 100%;
-  height: 80px;
-  position: fixed;
+  width:100vw;
+  height: 100px;
+  position:absolute;
   background-color:#000;
   opacity: 45%;
 }
 .Home-btn-initial {
-  width: 20%;
-  height: 25px;
+  height: fit-content;
   background-color:#1DB954;
-  display: inline-block;
-  margin-bottom: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
-  text-align: center;
-  cursor: pointer;
   border: 1px solid transparent;
-  padding: 6px 12px;
   font-size: 16px;
   border-radius: 24px;
-  padding: 7px 12px 5px;
+  padding: 12px 55px 12px;
 }
 .text-sublinhado{
   text-decoration:underline;
   font-size: 15px;
   color:#EFEFEF;
+}
+.text-sublinhado:hover{
+  background-color: transparent;
+}
+.text-p{
+  margin-top: 6%;
+  font-size: 15px;
+  color:#EFEFEF;
+  font-weight:bold;
+}
+.Content-btn-initial{
+  display:inline-flexbox;
+  height: fit-content;
+  background-color:#FFF;
+  color:#616467;
+  font-weight: 700;
+  border: 2px solid #616467;
+  font-size: 16px;
+  border-radius: 24px;
+  padding: 10px 35px 10px;
+  position: relative;
+}
+.Content-btn-initial:hover{
+  background-color: #616467;
+  color: #fff;
+}
+.Footer{
+  background-color: #222326;
+  width: 100%;
+  left: 0;
 }
