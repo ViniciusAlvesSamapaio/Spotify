@@ -1,18 +1,18 @@
 import '../css/App.css';
+import logo from '../logo.png';
 import Content from '../components/Content';
-import Footer from '../components/Footer'
-import FAQ from '../components/FAQ'
+import Footer from '../components/Footer';
+import Menu from '../components/Menu';
 
 function Home() {
   return (
     <div className="App">
-      <div className="Home-menuBar"> 
-        <ul className="Menu">
-          {/* <li><a href="http://">Premium</a></li> */}
-          {/* <li><a href="http://">Suporte</a></li> */}
-          {/* <li><a href="http://">Baixar</a></li> */}
-        </ul>
+      <div className="Home-menuBar">
+        <a className="logo-a" href="http://localhost:3000"><img src={logo} className="logo" alt="logo" /></a>
+        
+        <Menu />
       </div>
+
       <section className="Home-initial">
         
         <h2>Vá de Premium. E seja feliz!</h2>
@@ -22,7 +22,6 @@ function Home() {
       </section>
 
       <Content />
-      <FAQ />
       <Footer />
 
     </div>

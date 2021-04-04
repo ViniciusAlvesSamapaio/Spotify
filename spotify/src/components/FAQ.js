@@ -1,10 +1,10 @@
-import '../main';
-import '../css/style.css';
+import '../css/App.css';
+import '../js/main';
 
 function FAQ(){
     return(
-        <div>
-            <h1>Perguntas Frequentes</h1>
+        <div className="pageSuporte">
+            <h1 className="pageSuporte-h1">Perguntas Frequentes</h1>
 
             <div className="accordion">
                 <div className="accordion-item">
@@ -62,8 +62,9 @@ function FAQ(){
                 </div>
 
             </div>
-            <script src="../main.js" defer></script>
+
         </div>
     );
 }
+
 export default FAQ;
