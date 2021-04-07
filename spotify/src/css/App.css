@@ -10,24 +10,6 @@
 .logo-a:hover{
   background-color: transparent;
 }
-.Menu{
-  color: #FFF;
-  font-weight: 700;
-  font-size: 16px;
-  margin-top: -45px;
-}
-.albuns{
-  justify-content: center;
-  align-items: center;
-  flex-direction:row;
-  display: flex;
-  height:fit-content;
-  padding: 100px;
-}
-.albuns-img{
-  width: 234px; 
-  height: 234px;
-}
 p{
   color: #000;
   margin-top:1%;
@@ -95,6 +77,19 @@ h1{
 }
 /* Page Content */
 
+.albuns{
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+  display: flex;
+  height:fit-content;
+  padding: 100px;
+}
+.albuns-img{
+  width: 234px; 
+  height: 234px;
+}
+
 .Content{
   margin-top:45px;
 }
@@ -118,7 +113,6 @@ h1{
   height: 400px;
   margin-top:10%;
 }
-
 
 /* Page FAQ */
 
@@ -190,3 +184,9 @@ h1{
   }
 }
 /* Menu*/
+.Menu{
+  color: #FFF;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: -45px;
+}

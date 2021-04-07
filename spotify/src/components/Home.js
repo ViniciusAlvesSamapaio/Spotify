@@ -1,18 +1,20 @@
 import '../css/App.css';
-import logo from '../logo.png';
 import Content from '../components/Content';
 import Footer from '../components/Footer';
 import Menu from '../components/Menu';
+import FAQ from '../components/FAQ';
 
-function Home() {
+import { 
+  BrowserRouter as Router,
+  Switch, 
+  Route
+} from 'react-router-dom';
+
+function Home(){
   return (
     <div className="App">
-      <div className="Home-menuBar">
-        <a className="logo-a" href="http://localhost:3000"><img src={logo} className="logo" alt="logo" /></a>
-        
-        <Menu />
-      </div>
-
+      <Router>
+      <Menu />
       <section className="Home-initial">
         
         <h2>Vá de Premium. E seja feliz!</h2>
@@ -20,10 +22,17 @@ function Home() {
         <p className="text-p">* Sujeito a <a href="http://" className="text-sublinhado">Termos e condições</a>. Válido somente para usuários que ainda não experimentaram o Premium.</p>
 
       </section>
+      <Switch>
+          <Route path="/">
+            <Content />
+          </Route>
+          <Route path="/suporte">
+            <FAQ />
+          </Route>
+      </Switch>
 
-      <Content />
       <Footer />
-
+      </Router>
     </div>
   );
 }
