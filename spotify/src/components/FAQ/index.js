@@ -1,10 +1,11 @@
-import '../css/App.css';
-import '../js/main';
+import '../../css/App.css';
+import './main';
 
 function FAQ(){
+
     return(
-        <div className="pageSuporte">
-            <h1 className="pageSuporte-h1">Perguntas Frequentes</h1>
+        <div>
+            <h1>Perguntas Frequentes</h1>
 
             <div className="accordion">
                 <div className="accordion-item">
@@ -62,7 +63,6 @@ function FAQ(){
                 </div>
 
             </div>
-
         </div>
     );
 }

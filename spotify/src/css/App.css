@@ -2,8 +2,7 @@
   text-align: center;
 }
 .logo {
-  margin: 1%;
-  display: flex;
+  margin-top:25px;
   height: 40px;
   width:132px;
 }
@@ -42,11 +41,10 @@ h1{
   height: 95vh;
 }
 .Home-menuBar{
-  width:100vw;
-  height: 75px;
-  position:absolute;
-  background-color:#000;
-  opacity: 45%;
+  margin-top: -16px;
+  height: 120px;
+  background-color:#ac8e4b;
+  color:#fff;
 }
 .Home-btn-initial {
   height: fit-content;
@@ -70,13 +68,13 @@ h1{
   background-color: transparent;
 }
 .text-p{
-  margin-top: 20%;
+  margin-top: 10%;
   font-size: 15px;
   color:#EFEFEF;
   font-weight:bold;
 }
-/* Page Content */
 
+/* Page Content */
 .albuns{
   justify-content: center;
   align-items: center;
@@ -115,25 +113,10 @@ h1{
 }
 
 /* Page FAQ */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.pageSuporte{
-  font-family: 'Montserrat', sans-serif;
-  background-color: #fff;
-  height: 390px;
-
-}
-.pageSuporte-h1{
-  text-align: center;
-  margin: 2rem 0; 
-  font-size: 2.5rem;
-  color: black;
-  
 }
 .accordion {
   width: 90%;
@@ -184,9 +167,17 @@ h1{
   }
 }
 /* Menu*/
-.Menu{
-  color: #FFF;
-  font-weight: 700;
-  font-size: 16px;
-  margin-top: -45px;
+ul.Menu li a:hover{
+  background-color:#212121;
+}
+ul.Menu li{
+  list-style: none; 
+  float:right; 
+  display:flex; 
+  text-align: center; 
+}
+
+ul.Menu li a{ 
+  display: block;  
+  padding: 5px 10px; 
 }

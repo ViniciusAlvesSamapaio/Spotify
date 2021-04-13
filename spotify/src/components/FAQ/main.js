@@ -1,6 +1,5 @@
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
-
 accordionItemHeaders.forEach(accordionItemHeaders => {
 
   accordionItemHeaders.addEventListener("click", () => {
@@ -13,5 +12,6 @@ accordionItemHeaders.forEach(accordionItemHeaders => {
     else {
       accordionItemBody.style.maxHeight = 0;
     }
+    accordionItemBody.style.maxHeight = 1;
   });
 }); 
