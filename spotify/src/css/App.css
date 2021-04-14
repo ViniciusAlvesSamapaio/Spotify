@@ -20,7 +20,7 @@ a{
   text-decoration: none;
 }
 a:hover{
-  background-color:#3e8e41;
+  background-color:#3e8e41; 
 }
 h2{ 
   margin-top:10%;
@@ -48,6 +48,7 @@ h1{
 }
 .Home-btn-initial {
   height: fit-content;
+  width: fit-content;
   background-color:#1DB954;
   display:flex;
   justify-content: center;
@@ -81,13 +82,18 @@ h1{
   flex-direction:row;
   display: flex;
   height:fit-content;
-  padding: 100px;
+  padding: 100px; 
 }
 .albuns-img{
-  width: 234px; 
-  height: 234px;
+  width: 334px; 
+  height: 334px;
+  padding: 2px 5px;
 }
-
+.albuns-img:hover{
+  top:24px;
+  box-shadow:0 4px 3px #1DB954;
+  background-color: transparent;
+}
 .Content{
   margin-top:45px;
 }

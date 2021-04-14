@@ -1,5 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import '../css/App.css';
+import '../css/Cadastro.css';
 import React from 'react';
-
 class Cadastro extends React.Component{
 
     constructor(props) {
@@ -7,7 +9,7 @@ class Cadastro extends React.Component{
         this.state = {
             email: '',
             confirmaEmail: '',
-            senha: '',
+            senha: '', 
             nome: '',
             dia: '',
             mes: '',
@@ -75,34 +77,34 @@ class Cadastro extends React.Component{
    render() {
     return(
         <div>
-        <div>
-            <h1>Increva-se grátis e comece a curtir!</h1>
-        </div>
+    
+        <h1>Increva-se grátis e comece a curtir!</h1>
+    
         <form onSubmit={this.handleSubmit}>
             <div>
                 <label for="email">Qual é o seu e-mail?</label>
                 <br/>
-                <input type="text" name="email" id="email" value={this.state.email} onChange={this.handleEmailChange} placeholder="Insira seu e-mail"/>
+                <input className="data-input" type="text" name="email" id="email" value={this.state.email} onChange={this.handleEmailChange} placeholder="Insira seu e-mail"/>
             </div>
             <div>
                 <label for="confirmaEmail">Confirme seu e-mail</label>
                 <br/>
-                <input type="text" name="confirmaEmail" id="confirmaEmail" value={this.state.confirmaEmail} onChange={this.handleConfirmaEmailChange} placeholder="Insira o e-mail novamente"/>
+                <input className="data-input" type="text" name="confirmaEmail" id="confirmaEmail" value={this.state.confirmaEmail} onChange={this.handleConfirmaEmailChange} placeholder="Insira o e-mail novamente"/>
             </div>
             <div>
                 <label for="senha">Crie uma senha</label>
                 <br/>
-                <input type="password" name="senha" id="senha" value={this.state.senha} onChange={this.handleSenhaChange} placeholder="Crie uma senha"/>
+                <input className="data-input" type="password" name="senha" id="senha" value={this.state.senha} onChange={this.handleSenhaChange} placeholder="Crie uma senha"/>
             </div>
             <div>
                 <label for="nome">Como devemos chamar você?</label>
                 <br/>
-                <input type="text" name="nome" id="nome" value={this.state.nome} onChange={this.handleNomeChange} placeholder="Insira um nome de perfil"/>
+                <input className="data-input" type="text" name="nome" id="nome" value={this.state.nome} onChange={this.handleNomeChange} placeholder="Insira um nome de perfil"/>
             </div>
             <div>
                 <label>Qual a sua data de nascimento?</label>
                 <br/>
-                <input name="dia" id="dia" value={this.state.dia} onChange={this.handleDiaChange} placeholder="DD"/> 
+                <input className="date" name="dia" id="dia" value={this.state.dia} onChange={this.handleDiaChange} placeholder="DD"/> 
                 <select name="mes" id="mes" value={this.state.mes} onChange={this.handleMesChange} placeholder="Mês">
                     <option value="janeiro">janeiro</option>
                     <option value="fevereiro">fevereiro</option>
@@ -117,7 +119,7 @@ class Cadastro extends React.Component{
                     <option value="novembro">novembro</option>
                     <option value="dezembro">dezembro</option>
                 </select>
-                <input name="ano" id="ano" value={this.state.ano} onChange={this.handleAnoChange} placeholder="AAAA"/>
+                <input className="date" name="ano" id="ano" value={this.state.ano} onChange={this.handleAnoChange} placeholder="AAAA"/>
             </div>
             <div>
                 <label for="genero">Qual o seu gênero?</label>
@@ -130,9 +132,9 @@ class Cadastro extends React.Component{
             <div>
                 <input type="checkbox" name="termo" id="termo" value={this.state.termo} onChange={this.handleTermoChange} /> Eu aceito os Termos e Condições e a Política de Privacidade do Spotify.
             </div>
-            <div>
-                <button type="submit">Inscrever-se</button>
-            </div>             
+            <center>
+                <a className="Home-btn-initial" type="submit">Inscrever-se</a>
+            </center>             
         </form>
     </div>
     );

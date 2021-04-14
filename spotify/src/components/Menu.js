@@ -10,7 +10,6 @@ function Menu(){
             <div>
                 <ul className="Menu">
                     <li><Link to="/suporte">Suporte</Link></li> 
-                    <li><Link to="/playlist">Playlist</Link></li>
                     <li><Link to="/inscreva-se">Inscreva-se</Link></li> 
                 </ul>
             </div>
@@ -18,4 +17,4 @@ function Menu(){
         </div>
     );
 }
-export default Menu;
+export default Menu; 

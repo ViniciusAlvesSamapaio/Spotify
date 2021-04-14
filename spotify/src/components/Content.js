@@ -8,17 +8,16 @@ function Content(){
             <p>Conheça os melhores lançamentos do momento.</p>
 
             <div className="Content">
-                <a href="http://" className="Content-btn-initial">Abrir o Web Player</a>
+                <a href="/playlist1" className="Content-btn-initial">Abrir o Web Player</a>
             </div>
 
-            <div className="albuns">
-                <div><img src="../img/albums/1.jpg" className="albuns-img"/></div>
-                <div><img src="../img/albums/2.jpg"className="albuns-img"/></div>
-                <div><img src="../img/albums/3.jpg"className="albuns-img"/></div>
-                <div><img src="../img/albums/4.jpg"className="albuns-img"/></div>
-                <div><img src="../img/albums/5.jpg"className="albuns-img"/></div>
-                <div><img src="../img/albums/6.jpg"className="albuns-img"/></div>
-		    </div>
+            <div className="margin-image">
+                <div className="albuns">
+                    <a href="/playlist1" className="albuns-img"><img src="../img/albums/1.jpg" className="albuns-img"/></a>
+                    <a href="/playlist2" className="albuns-img"><img src="../img/albums/2.jpg" className="albuns-img"/></a>
+                    <a href="/playlist3" className="albuns-img"><img src="../img/albums/3.jpg" className="albuns-img"/></a>
+                </div>
+            </div>
         </div>
     );
 }
