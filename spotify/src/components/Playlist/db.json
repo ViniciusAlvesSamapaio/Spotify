@@ -1,0 +1,97 @@
+{
+    "Playlists": [
+        {
+            "title": "UNLEASHED",
+            "artist": "Skillet",
+            "id": "1",
+            "image": "https://github.com/May199/DEVengers/blob/main/spotify/public/img/albums/2.jpg",
+            "musics":[
+                {
+                    "1": [
+                        {
+                            "name": "",
+                            "link": "",
+                            "id": ""
+                        }
+                    ],
+                    "2": [
+                        {
+                            "name": "",
+                            "link": "",
+                            "id": ""
+                        }
+                    ],
+                    "3": [
+                        {
+                            "name": "",
+                            "link": "",
+                            "id": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "CRISE",
+            "artist": "Rashid",
+            "id": "2",
+            "image": "https://github.com/May199/DEVengers/blob/main/spotify/public/img/albums/1.jpg",
+            "musics":[
+                {
+                    "1": [
+                        {
+                            "name": "",
+                            "link": "",
+                            "id": ""
+                        }
+                    ],
+                    "2": [
+                        {
+                            "name": "",
+                            "link": "",
+                            "id": ""
+                        }
+                    ],
+                    "3": [
+                        {
+                            "name": "",
+                            "link": "",
+                            "id": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "The Battle of Los Angeles",
+            "artist": "Rage Against the Machine",
+            "id": "3",
+            "image": "https://github.com/May199/DEVengers/blob/main/spotify/public/img/albums/3.jpg",
+            "musics":[
+                {
+                    "1": [
+                        {
+                            "name": "",
+                            "link": "",
+                            "id": ""
+                        }
+                    ],
+                    "2": [
+                        {
+                            "name": "",
+                            "link": "",
+                            "id": ""
+                        }
+                    ],
+                    "3": [
+                        {
+                            "name": "",
+                            "link": "",
+                            "id": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

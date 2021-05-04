@@ -8,14 +8,14 @@ function Content(){
             <p>Conheça os melhores lançamentos do momento.</p>
 
             <div className="Content">
-                <a href="/playlist1" className="Content-btn-initial">Abrir o Web Player</a>
+                <a href="/" className="Content-btn-initial">Abrir o Web Player</a>
             </div>
 
             <div className="margin-image">
                 <div className="albuns">
-                    <a href="/playlist1" className="albuns-img"><img src="../img/albums/1.jpg" className="albuns-img"/></a>
-                    <a href="/playlist2" className="albuns-img"><img src="../img/albums/2.jpg" className="albuns-img"/></a>
-                    <a href="/playlist3" className="albuns-img"><img src="../img/albums/3.jpg" className="albuns-img"/></a>
+                    <a href="/" className="albuns-img"><img src="../img/albums/1.jpg" className="albuns-img"/></a>
+                    <a href="/" className="albuns-img"><img src="../img/albums/2.jpg" className="albuns-img"/></a>
+                    <a href="/" className="albuns-img"><img src="../img/albums/3.jpg" className="albuns-img"/></a>
                 </div>
             </div>
         </div>
