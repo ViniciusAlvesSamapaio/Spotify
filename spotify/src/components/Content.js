@@ -1,7 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 import '../css/App.css';
+import db from '../components/Albums/db.json';
+
 
 function Content(){
+    const image = db.Albums;
+
     return (
         <div className="App">
             <h1>É música que você quer?</h1>
@@ -13,9 +17,9 @@ function Content(){
 
             <div className="margin-image">
                 <div className="albuns">
-                    <a href="/" className="albuns-img"><img src="../img/albums/1.jpg" className="albuns-img"/></a>
-                    <a href="/" className="albuns-img"><img src="../img/albums/2.jpg" className="albuns-img"/></a>
-                    <a href="/" className="albuns-img"><img src="../img/albums/3.jpg" className="albuns-img"/></a>
+                    <a href="/" className="albuns-img"><img src={image.indexOf} className="albuns-img"/></a>
+                    <a href="/" className="albuns-img"><img src={image} className="albuns-img"/></a>
+                    <a href="/" className="albuns-img"><img src={image} className="albuns-img"/></a>
                 </div>
             </div>
         </div>
