@@ -17,7 +17,7 @@ function Content(){
 
             <div className="margin-image">
                 <div className="albuns">
-                    <a href="/" className="albuns-img"><img src={image.indexOf} className="albuns-img"/></a>
+                    <a href="/" className="albuns-img"><img src={image} className="albuns-img"/></a>
                     <a href="/" className="albuns-img"><img src={image} className="albuns-img"/></a>
                     <a href="/" className="albuns-img"><img src={image} className="albuns-img"/></a>
                 </div>

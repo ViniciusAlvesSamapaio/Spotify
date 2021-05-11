@@ -1,10 +1,11 @@
-import '../../css/App.css';
 import './main';
+import Menu from '../Menu';
 
 function FAQ(){
 
     return(
         <div>
+            <Menu />
             <h1>Perguntas Frequentes</h1>
 
             <div className="accordion">
