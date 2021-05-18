@@ -1,7 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import './Cadastro.css';
 import React from 'react';
 import Menu from '../Menu';
+import Footer from '../Footer';
+
 class Cadastro extends React.Component{
 
     constructor(props) {
@@ -73,15 +74,14 @@ class Cadastro extends React.Component{
         alert("Cadastrado...");
     }
 
-
    render() {
     return(
-        <div>
+        <div className="cadastro">
             <Menu />
         
             <h1>Increva-se grátis e comece a curtir!</h1>
-        
-            <form onSubmit={this.handleSubmit}>
+
+            <form action="/inscreva-se" method="POST" onSubmit={this.handleSubmit}>
                 <div>
                     <label for="email">Qual é o seu e-mail?</label>
                     <br/>
@@ -123,22 +123,20 @@ class Cadastro extends React.Component{
                     <input className="date" name="ano" id="ano" value={this.state.ano} onChange={this.handleAnoChange} placeholder="AAAA"/>
                 </div>
                 <div>
-                    <label for="genero">Qual o seu gênero?</label>
-                    <br/>
-                    Não sei fazer
-                </div>
-                <div>
                     <input type="checkbox" name="compatilharDados" id="compatilharDados" value={this.state.compatilharDados} onChange={this.handleCompatilharDadosChange} /> Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para fins de marketing.
                 </div>
                 <div>
                     <input type="checkbox" name="termo" id="termo" value={this.state.termo} onChange={this.handleTermoChange} /> Eu aceito os Termos e Condições e a Política de Privacidade do Spotify.
                 </div>
                 <center>
-                    <a className="Home-btn-initial" type="submit">Inscrever-se</a>
+                    <button className="Home-btn-initial" type="submit">Inscrever-se</button>
                 </center>             
             </form>
+
+            <Footer />
         </div>
     );
    }
 }
+
 export default Cadastro;

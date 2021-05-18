@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import '../css/App.css';
-import db from '../components/Albums/db.json';
+import db from '../server/db.json';
 
 
 function Content(){

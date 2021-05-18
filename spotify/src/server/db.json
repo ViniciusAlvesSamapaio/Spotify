@@ -1,5 +1,5 @@
 {
-    "Albums": [
+    "Albums": [ 
         {
             "title": "UNLEASHED",
             "artist": "Skillet",
@@ -92,6 +92,14 @@
                     ]
                 }
             ]
+        }
+    ],
+    "Users": [
+        {
+            "id": "",
+            "email": "",
+            "password": "",
+            "name": ""
         }
     ]
 }

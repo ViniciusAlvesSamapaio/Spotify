@@ -2,18 +2,20 @@ import './css/App.css';
 import FAQ from './components/FAQ/index';
 import Cadastro from './components/Cadastro/index';
 import Home from './components/Home/index';
-
+import Login  from './components/Login/index';
 import { 
   BrowserRouter as Router, 
   Switch, 
   Route
 } from 'react-router-dom';
 
-
 function App(){ 
   return(
     <Router>
     <Switch>
+        <Route path="/login">
+          <Login />
+        </Route>
         <Route path="/suporte">
           <FAQ />
         </Route>

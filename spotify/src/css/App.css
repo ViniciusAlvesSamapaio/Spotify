@@ -3,6 +3,7 @@
 }
 .logo {
   margin-top:25px;
+  margin: 25px;
   height: 40px;
   width:132px;
 }
@@ -42,7 +43,7 @@ h1{
 }
 .Home-menuBar{
   margin-top: -16px;
-  height: 120px;
+  height: 100px;
   background-color:#ac8e4b;
   color:#fff;
 }
@@ -185,5 +186,6 @@ ul.Menu li{
 
 ul.Menu li a{ 
   display: block;  
-  padding: 5px 10px; 
+  padding: 5px 10px;
+  margin-top: -28px;
 }
