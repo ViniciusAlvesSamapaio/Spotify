@@ -1,5 +1,6 @@
 import './main';
 import Menu from '../components/Menu';
+import './Suporte.css';
 
 function FAQ(){
 

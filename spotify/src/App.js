@@ -1,4 +1,5 @@
-import './css/App.css';
+import React, {Component} from 'react';
+import './App.css';
 import Suporte from './views/Suporte';
 import Cadastro from './views/Cadastro';
 import Home from './views/Home';
@@ -9,28 +10,48 @@ import {
   Route
 } from 'react-router-dom';
 
-function App(){ 
-  return(
-    <Router>
-    <Switch>
-        <Route path="/login">
-          <Login />
-        </Route>
-        <Route path="/suporte">
-          <Suporte />
-        </Route>
+class App extends Component { 
+  state = {
+    response: ''
+  };
+  componentDidMount(){
+    this.callApi()
+      .then(res => this.setState({response: res.express}))
+      .cath(error => console.log(error));
+  }
+  callApi = async () => {
+    const response = await fetch('/api');
+    const body = await response.json();
 
-        <Route path="/inscreva-se">
-          <Cadastro />
-        </Route>
+    if(response.status !== 200) throw Error(body.message);
 
-        <Route path="/">
-          <Home />
-        </Route>
-        
-    </Switch>
-    </Router>
-
-  );
+    return body;
+  };
+  
+  render(){
+    return(
+      <Router>
+      <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/suporte">
+            <Suporte />
+          </Route>
+  
+          <Route path="/inscreva-se">
+            <Cadastro />
+          </Route>
+  
+          <Route path="/">
+            <Home />
+          </Route>
+          
+      </Switch>
+      </Router>
+  
+    );
+  }
 }
+
 export default App;

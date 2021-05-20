@@ -1,0 +1,135 @@
+
+.logo {
+    margin-top:25px;
+    margin: 25px;
+    height: 40px;
+    width:132px;
+}
+.logo-a:hover{
+    background-color: transparent;
+}
+p{
+    color: #000;
+    margin-top:1%;
+    font-weight: bold;
+}
+a{ 
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a:hover{
+    background-color:#3e8e41; 
+}
+h2{ 
+    margin-top:10%;
+    color:#FFF;
+    text-align: center;
+    font-size: 80px;
+}
+h1{
+    font-size:35px;
+    margin-top: 65px;
+}
+.Home-initial {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color:#f6cb6c; 
+    height: 95vh;
+}
+.Home-menuBar{
+    margin-top: -16px;
+    height: 100px;
+    background-color:#ac8e4b;
+    color:#fff;
+}
+.Home-btn-initial {
+    height: fit-content;
+    width: fit-content;
+    background-color:#1DB954;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border: 1px solid transparent;
+    font-size: 16px;
+    border-radius: 24px;
+    padding: 15px 85px 15px;
+    margin-top: 35px;
+}
+.text-sublinhado{
+    text-decoration:underline;
+    font-size: 15px;
+    color:#EFEFEF;
+}
+.text-sublinhado:hover{
+    background-color: transparent;
+}
+.text-p{
+    margin-top: 10%;
+    font-size: 15px;
+    color:#EFEFEF;
+    font-weight:bold;
+}
+  
+/* Page Content */
+.albuns{
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    display: flex;
+    height:fit-content;
+    padding: 100px; 
+}
+.albuns-img{
+    width: 334px; 
+    height: 334px;
+    padding: 2px 5px;
+}
+.albuns-img:hover{
+    top:24px;
+    box-shadow:0 4px 3px #1DB954;
+    background-color: transparent;
+}
+.Content{
+    margin-top:45px;
+}
+.Content-btn-initial{
+    height: fit-content;
+    background-color:#FFF;
+    color:#616467;
+    font-weight: 700;
+    border: 2px solid #616467;
+    font-size: 16px;
+    border-radius: 24px;
+    padding: 10px 35px 10px;
+}
+.Content-btn-initial:hover{
+    background-color: #616467;
+    color: #fff;
+}
+.Footer{
+    background-color: #000;
+    display: inline-flexbox;
+    height: 400px;
+    margin-top:10%;
+}
+/* Menu*/
+  ul.Menu li a:hover{
+    background-color:#212121;
+}
+ul.Menu li{
+    list-style: none; 
+    float:right; 
+    display:flex; 
+    text-align: center; 
+}
+  
+ul.Menu li a{ 
+    display: block;  
+    padding: 5px 10px;
+    margin-top: -28px;
+}
+  

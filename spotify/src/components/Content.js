@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/alt-text */
-import '../css/App.css';
+import './components.css';
 import db from '../server/db.json';
 
 
