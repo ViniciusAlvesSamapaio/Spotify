@@ -1,5 +1,5 @@
-import NewTaskInput from './NewTaskInput';
-import ListItem from './ListItem';
+import NewTaskInput from '../components/NewTaskInput';
+import ListItem from '../components/ListItem';
 
 
 export default function Playlist(){

@@ -1,7 +1,7 @@
-import Initialbanner from '../Initialbanner';
-import Content from '../Content';
-import Footer from '../Footer';
-import Menu from '../Menu';
+import Initialbanner from '../components/Initialbanner';
+import Content from '../components/Content';
+import Footer from '../components/Footer';
+import Menu from '../components/Menu';
 
 export default function Home(){
     return(

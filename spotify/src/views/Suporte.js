@@ -1,5 +1,5 @@
 import './main';
-import Menu from '../Menu';
+import Menu from '../components/Menu';
 
 function FAQ(){
 

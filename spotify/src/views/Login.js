@@ -1,6 +1,6 @@
 import './Login.css';
 import React, {Component} from 'react';
-import Menu from '../Menu';
+import Menu from '../components/Menu';
 
 export default class Login extends Component {
 

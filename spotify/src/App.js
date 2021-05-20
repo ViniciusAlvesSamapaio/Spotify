@@ -1,8 +1,8 @@
 import './css/App.css';
-import FAQ from './components/FAQ/index';
-import Cadastro from './components/Cadastro/index';
-import Home from './components/Home/index';
-import Login  from './components/Login/index';
+import Suporte from './views/Suporte';
+import Cadastro from './views/Cadastro';
+import Home from './views/Home';
+import Login  from './views/Login';
 import { 
   BrowserRouter as Router, 
   Switch, 
@@ -17,7 +17,7 @@ function App(){
           <Login />
         </Route>
         <Route path="/suporte">
-          <FAQ />
+          <Suporte />
         </Route>
 
         <Route path="/inscreva-se">
