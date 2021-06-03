@@ -1,10 +1,7 @@
 import './components.css';
-import db from '../server/db.json';
-
 
 function Content(){
-    const image = db.Albums;
-
+    
     return (
         <div className="App">
             <h1>É música que você quer?</h1>
@@ -16,9 +13,9 @@ function Content(){
 
             <div className="margin-image">
                 <div className="albuns">
+                    {/* <a href="/" className="albuns-img"><img src={image} className="albuns-img"/></a>
                     <a href="/" className="albuns-img"><img src={image} className="albuns-img"/></a>
-                    <a href="/" className="albuns-img"><img src={image} className="albuns-img"/></a>
-                    <a href="/" className="albuns-img"><img src={image} className="albuns-img"/></a>
+                    <a href="/" className="albuns-img"><img src={image} className="albuns-img"/></a> */}
                 </div>
             </div>
         </div>
