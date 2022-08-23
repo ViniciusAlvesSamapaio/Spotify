@@ -1,8 +1,28 @@
-import './main';
 import Menu from '../../components/Menu';
 import './index.css';
 
 function FAQ(){
+
+    const menu = () => {
+
+        const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+        accordionItemHeaders.forEach(accordionItemHeaders => {
+
+        accordionItemHeaders.addEventListener("click", () => {
+            accordionItemHeaders.classList.toggle("active");
+            const accordionItemBody = accordionItemHeaders.nextElementSibling;
+
+            if (accordionItemHeaders.classList.contains("active")){
+            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+            }
+            else {
+            accordionItemBody.style.maxHeight = 0;
+            }
+            accordionItemBody.style.maxHeight = 1;
+        });
+        }); 
+    }
 
     return(
         <div>
@@ -11,7 +31,7 @@ function FAQ(){
 
             <div className="accordion">
                 <div className="accordion-item">
-                <div className="accordion-item-header">
+                <div className="accordion-item-header" onClick={menu}>
                     Qual conexão eu preciso para usar o Spotify?
                 </div>
                 <div className="accordion-item-body">
@@ -24,7 +44,7 @@ function FAQ(){
                 </div>
                 
                 <div className="accordion-item">
-                    <div className="accordion-item-header">
+                    <div className="accordion-item-header" onClick={menu}>
                         O Spotify transmite em EDGE (2G, rede móvel)?
                     </div>
                     <div className="accordion-item-body">
@@ -36,7 +56,7 @@ function FAQ(){
                     </div>
                 </div>
                 <div className="accordion-item">
-                    <div className="accordion-item-header">
+                    <div className="accordion-item-header" onClick={menu}>
                         Quanto espaço eu preciso para Micro-SD para minha lista offline?
                     </div>
                 <div className="accordion-item-body">
@@ -51,7 +71,7 @@ function FAQ(){
                 </div>
 
                 <div className="accordion-item">
-                <div className="accordion-item-header">
+                <div className="accordion-item-header" onClick={menu}>
                     Como posso usar o Spotify fora do meu país?
                 </div>
                 <div className="accordion-item-body">
