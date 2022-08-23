@@ -1,0 +1,15 @@
+.info-input{
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height:35px;
+    border-color: gray;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.login{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin-top: 35px;
+}
